@@ -8,7 +8,6 @@ def solution(n, wires):
     for v1, v2 in wires:
         graph[v1].append(v2)
         graph[v2].append(v1)
-    print(graph)
 
     def bfs(start):
         visited = [False] * (n+1)
